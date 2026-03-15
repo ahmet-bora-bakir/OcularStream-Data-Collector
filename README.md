@@ -11,7 +11,7 @@ The tool serves two main purposes:
    Records the full, unaltered JSON output from the eye tracker to ensure no information is lost for subsequent offline analysis.
 
 2. **Multi-Device Temporal Synchronization**  
-   Provides a reliable temporal reference point, enabling accurate alignment of eye-tracking data with timestamps from other biometric sensors, EEG, physiological recordings, or external event markers.
+   Provides a reliable temporal reference point, enabling accurate alignment of eye-tracking data with timestamps from computer's time data.
 
 ## 📊 Data Structure & Captured Metrics
 
