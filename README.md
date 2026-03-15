@@ -88,7 +88,7 @@ For detailed API specifications, status codes, frame states, calibration routine
 - **High-resolution timestamps** — preserves both string and millisecond UNIX-like time for precise synchronization
 - **Research-oriented output** — plain JSON lines or structured files, easy to parse in Python (pandas/json), MATLAB, R, Julia, etc.
 - **Minimal processing overhead** — near real-time logging with very low CPU usage
-- **Synchronization-friendly** — consistent timestamp format to facilitate cross-modal alignment (e.g. with EEG, HR, keystroke logs)
+- **Synchronization-friendly** — consistent timestamp format to facilitate cross-modal alignment
 
 ## ⚠️ Important Notes & Disclaimer
 
