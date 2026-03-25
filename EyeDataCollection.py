@@ -143,7 +143,52 @@ class DeviceTime:
     def __init__(self):
         time = []
     
+
+    def time_stamp(self):       ##converts millisecond values to the time stamp value
+        print("a")
+
+    def show_time(self):
+        while(True):
+            try:
+                timeType = input("Please enter time type(\"milliseconds\" or \"timestamp\"): ")
+                if(timeType != "milliseconds" or timeType != "timestamp"):
+                    raise NameError()
+                time_n = int(input("Please enter how many time datas you want to see(ex: first 10 time in milliseconds): "))
+                if(time_n < 0):
+                    raise ValueError("Out of range!")
+                break
+            except(ValueError):
+                print("Invalid input! Please input numbers within range(time_n > 0).")
+            except(NameError):
+                print("Time type is undefined.")
+
+        if(timeType == "milliseconds"):
+            print("Time datas for eye tracker(in milliseconds): ")
+            for x in range(time_n):
+                print(self.time[x], end= " ")
+        else:
+            print("Time datas for eye tracker(in time stamp): ")
+            for x in range(time_n):
+                print(self.time_stamp(self))
+
+    def time_converter(self, other: 'EyeTracker'):
+        print("Tracker time: ")
+        other.show_time()
+        print("\nDevice time: ")
+        self.show_time()
+
+        other_arranged = []
+        tracker_arranged = []
+
+        closestMinVal
+
+        if(other.time.size() == self.time.size()):
+            ##for x in self.time:
+            ##  closestMinVal = min(abs(other.time[0] - x))
+            closestMinVal = min([abs(other.time[0] - x) for x in self.time])
+
     def time_sync(self, other):
+        print("a")
         
 
 
